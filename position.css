@@ -1,0 +1,60 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    border: 1px solid black;
+    margin: 10px;
+    
+}
+
+.box-1 {
+    position: static;
+    /* left right top bottom no effect for static */
+    left: 30px;
+}
+
+.box-2 {
+    position: relative;
+    left: -30px;
+    top: -20px;
+}
+
+.box-3 {
+    position: fixed;
+    /* moved to right starting position 0 */
+    top: 0;
+    right: 0;
+    /* the larger the z-index, the closer to u */
+    z-index: 2;
+
+}
+
+.box-4 {
+    /* fixed + relative nature */
+    /* i.e. out to another layer */
+    position: sticky;
+    top : 200px;
+    z-index: 2;
+}
+
+.box-5 {
+    position: relative;
+    width : 600px;
+    height: 600px;
+    background: orange;
+}
+
+.box-6 {
+    /* pls note box6 embedded inside box 5 */
+    position: absolute;
+    /* i.e. lower right corner */
+    bottom: 60px;
+    right: 20px;
+}
+
+.box-7 {
+    position: fixed;
+    background-color: brown;
+    top: 0;
+    right: 10px;
+}

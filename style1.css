@@ -1,0 +1,98 @@
+html, body {
+    font-family: "Noto Sans";
+    border: 3px solid red;
+    background-color: #d9e2e8;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 0 20px;
+    /* with border can see result easily */
+    border: 3px solid;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px 20px 30px;
+    /* add margin making 2 white boxes not so close */
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 3px 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.sporty {
+    color : #dd4654;
+}
+
+.casual {
+    color : #0b4aa1;
+}
+
+.formal {
+    color : #4d2a1c;
+}
+
+.sporty, .casual {
+    font-size: 50px;
+}
+
+.formal {
+    font-size: 60px;
+}
+
+.card h2 {
+    font-size : 30px;
+    /* weight = bold effect */
+    font-weight: 900    ;
+    /* font-style: italic; */
+    /* font-variant: small-caps; */
+
+    /* text related property */
+    text-transform : capitalize;
+    /* text-indent: 20px; */
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    /* text-align: center; */
+
+    padding: 10px 20px 30px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+    /* border: 2px solid; */
+}
+
+.card-sporty  {
+    background: #fff url(https://media.wired.com/photos/668d534f791d9d44f6741af9/master/w_960,c_limit/Nike-Adapt-BB-Discontinued.jpg)  no-repeat center right/200px;
+}
+
+/* http link property */
+.card a {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 7px;
+    padding: 8px 20px;
+}
+
+.card a:hover {
+    /* making the effect a bit diff w/o adding color */
+    opacity: 0.7;
+}
+
+.card p {
+    text-transform: lowercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+a.sporty{
+    background-color: red;
+}
+
+a .formal {
+    background-color: blue;
+}
+

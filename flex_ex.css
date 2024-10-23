@@ -1,0 +1,88 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    /* background-color: ; */
+}
+
+ul {
+    /* don't show the dot */
+    list-style: none;
+
+}
+
+a {
+    /* don't show the underline */
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: hsl(30,99%,51%);
+    ;
+}
+
+/* header */
+
+.header {
+    background-color: hsl(30,99%,51%);
+    padding: 30px;
+    text-transform: capitalize;
+}
+
+/* flex be applied to mother */
+/* nav ul */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px; 
+    background-color: hsl(0,0%,93%);
+    
+}
+
+.nav-list a {
+    font-size: 20px;
+    /* margin: 20px; */
+    text-transform: capitalize;
+    color: hsl(0,0%,47)%;
+}
+
+main {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 40px;
+}
+
+main section {
+    /* flex 1 is the ratio of occupying */
+    flex: 1;
+}
+
+main aside {
+    /* this with fixed width, the main section would be varied */
+    width: 250px;
+}
+
+section h2 {
+    margin: 15px 0;
+}
+
+aside h3 {
+    padding: 10px;
+    background-color: hsl(30,99%,51%);
+    color: white;
+}
+
+aside li {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
