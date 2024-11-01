@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+.container {
+    display: flex;
+
+} 
+
+p {
+    /* default 16, so 2rem = 32 */
+    padding: 2rem;
+}
+
+main {
+    container-type: inline-size;
+    container-name: mx;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+main p {
+    background: green;
+}
+
+aside {
+    container-type: inline-size;
+    container-name: aside;
+    flex: 0 0 30%;
+    background: orange;
+    padding: 20px;
+}
+
+/* 992 is talking about within the container only, not total browser width */
+@container mx (max-width: 992px) {
+    main p {
+        background: lightblue;
+    }
+}
+
+@container aside (max-width: 300px) {
+    aside p {
+        background: lightgreen;
+    }
+}
